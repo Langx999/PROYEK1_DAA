@@ -1,0 +1,221 @@
+
+=== BENCHMARK KMP: ITERATIF VS REKURSIF ===
+Perbandingan yang adil menggunakan teks dan pola berukuran sama.
+
+Terbaik (tidak ada prefix yang cocok) — panjang teks 100, pola 16 karakter
+  Metode             : iterative
+  Panjang teks       : 100 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 0
+  Perbandingan       : 114
+  Waktu              : 0.000030 detik
+  Memori puncak      : 0.26 KiB
+  Memori saat akhir  : 0.00 KiB
+  Metode             : recursive
+  Panjang teks       : 100 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 0
+  Perbandingan       : 114
+  Waktu              : 0.000054 detik
+  Memori puncak      : 0.99 KiB
+  Memori saat akhir  : 0.95 KiB
+
+Terburuk (banyak prefix cocok/kandidat) — panjang teks 100, pola 16 karakter
+  Metode             : iterative
+  Panjang teks       : 100 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 85
+  Perbandingan       : 199
+  Waktu              : 0.000149 detik
+  Memori puncak      : 13.95 KiB
+  Memori saat akhir  : 13.77 KiB
+  Metode             : recursive
+  Panjang teks       : 100 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 85
+  Perbandingan       : 199
+  Waktu              : 0.000144 detik
+  Memori puncak      : 9.68 KiB
+  Memori saat akhir  : 9.64 KiB
+
+Terbaik (tidak ada prefix yang cocok) — panjang teks 300, pola 16 karakter
+  Metode             : iterative
+  Panjang teks       : 300 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 0
+  Perbandingan       : 314
+  Waktu              : 0.000085 detik
+  Memori puncak      : 0.32 KiB
+  Memori saat akhir  : 0.03 KiB
+  Metode             : recursive
+  Panjang teks       : 300 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 0
+  Perbandingan       : 314
+  Waktu              : 0.000922 detik
+  Memori puncak      : 2.53 KiB
+  Memori saat akhir  : 1.09 KiB
+
+Terburuk (banyak prefix cocok/kandidat) — panjang teks 300, pola 16 karakter
+  Metode             : iterative
+  Panjang teks       : 300 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 285
+  Perbandingan       : 599
+  Waktu              : 0.001141 detik
+  Memori puncak      : 37.03 KiB
+  Memori saat akhir  : 36.69 KiB
+  Metode             : recursive
+  Panjang teks       : 300 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 285
+  Perbandingan       : 599
+  Waktu              : 0.003796 detik
+  Memori puncak      : 38.36 KiB
+  Memori saat akhir  : 35.54 KiB
+
+Terbaik (tidak ada prefix yang cocok) — panjang teks 600, pola 16 karakter
+  Metode             : iterative
+  Panjang teks       : 600 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 0
+  Perbandingan       : 614
+  Waktu              : 0.000478 detik
+  Memori puncak      : 0.32 KiB
+  Memori saat akhir  : 0.03 KiB
+  Metode             : recursive
+  Panjang teks       : 600 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 0
+  Perbandingan       : 614
+  Waktu              : 0.004550 detik
+  Memori puncak      : 11.97 KiB
+  Memori saat akhir  : 1.16 KiB
+
+Terburuk (banyak prefix cocok/kandidat) — panjang teks 600, pola 16 karakter
+  Metode             : iterative
+  Panjang teks       : 600 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 585
+  Perbandingan       : 1199
+  Waktu              : 0.002863 detik
+  Memori puncak      : 83.78 KiB
+  Memori saat akhir  : 83.44 KiB
+  Metode             : recursive
+  Panjang teks       : 600 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 585
+  Perbandingan       : 1199
+  Waktu              : 0.020979 detik
+  Memori puncak      : 103.86 KiB
+  Memori saat akhir  : 82.29 KiB
+
+=== BENCHMARK MERGE SORT: ITERATIF VS REKURSIF ===
+Merge Sort diuji pada data terurut dan terbalik; keduanya tetap O(n log n).
+
+Terbaik (data sudah terurut) — jumlah data 100
+  Metode             : iterative
+  Jumlah data        : 100
+  Perbandingan       : 372
+  Waktu              : 0.002694 detik
+  Memori puncak      : 3.55 KiB
+  Urutan benar       : Ya
+  Metode             : recursive
+  Jumlah data        : 100
+  Perbandingan       : 316
+  Waktu              : 0.001708 detik
+  Memori puncak      : 2.34 KiB
+  Urutan benar       : Ya
+
+Data terbalik — jumlah data 100
+  Metode             : iterative
+  Jumlah data        : 100
+  Perbandingan       : 316
+  Waktu              : 0.000810 detik
+  Memori puncak      : 3.22 KiB
+  Urutan benar       : Ya
+  Metode             : recursive
+  Jumlah data        : 100
+  Perbandingan       : 356
+  Waktu              : 0.000939 detik
+  Memori puncak      : 1.82 KiB
+  Urutan benar       : Ya
+
+Terbaik (data sudah terurut) — jumlah data 300
+  Metode             : iterative
+  Jumlah data        : 300
+  Perbandingan       : 1416
+  Waktu              : 0.003600 detik
+  Memori puncak      : 9.50 KiB
+  Urutan benar       : Ya
+  Metode             : recursive
+  Jumlah data        : 300
+  Perbandingan       : 1180
+  Waktu              : 0.003551 detik
+  Memori puncak      : 5.12 KiB
+  Urutan benar       : Ya
+
+Data terbalik — jumlah data 300
+  Metode             : iterative
+  Jumlah data        : 300
+  Perbandingan       : 1180
+  Waktu              : 0.003105 detik
+  Memori puncak      : 9.50 KiB
+  Urutan benar       : Ya
+  Metode             : recursive
+  Jumlah data        : 300
+  Perbandingan       : 1308
+  Waktu              : 0.003607 detik
+  Memori puncak      : 5.15 KiB
+  Urutan benar       : Ya
+
+Terbaik (data sudah terurut) — jumlah data 600
+  Metode             : iterative
+  Jumlah data        : 600
+  Perbandingan       : 3132
+  Waktu              : 0.008738 detik
+  Memori puncak      : 19.43 KiB
+  Urutan benar       : Ya
+  Metode             : recursive
+  Jumlah data        : 600
+  Perbandingan       : 2660
+  Waktu              : 0.007889 detik
+  Memori puncak      : 10.22 KiB
+  Urutan benar       : Ya
+
+Data terbalik — jumlah data 600
+  Metode             : iterative
+  Jumlah data        : 600
+  Perbandingan       : 2660
+  Waktu              : 0.007536 detik
+  Memori puncak      : 19.43 KiB
+  Urutan benar       : Ya
+  Metode             : recursive
+  Jumlah data        : 600
+  Perbandingan       : 2916
+  Waktu              : 0.008437 detik
+  Memori puncak      : 10.22 KiB
+  Urutan benar       : Ya
+
+=== UJI SKALABILITAS KMP ITERATIF ===
+Input besar hanya diuji dengan iteratif karena rekursi dibatasi untuk keamanan stack Python.
+
+Terbaik (tidak ada prefix yang cocok)
+  Metode             : iterative
+  Panjang teks       : 20000 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 0
+  Perbandingan       : 20014
+  Waktu              : 0.022415 detik
+  Memori puncak      : 0.32 KiB
+  Memori saat akhir  : 0.03 KiB
+
+Terburuk (banyak prefix cocok/kandidat)
+  Metode             : iterative
+  Panjang teks       : 20000 karakter
+  Panjang pola       : 16 karakter
+  Jumlah kecocokan   : 19985
+  Perbandingan       : 39999
+  Waktu              : 0.207965 detik
+  Memori puncak      : 3125.48 KiB
+  Memori saat akhir  : 3125.13 KiB
